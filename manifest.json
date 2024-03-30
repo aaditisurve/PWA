@@ -1,0 +1,27 @@
+{
+    "name": "Udemy App",
+    "short_name": "Udemy",
+    "start_url": "index.html",
+    "scope": ".",
+    "description":"This is a Udemy App.",
+    "icons": [
+        {
+          "src": "images/icon.png",
+          "sizes": "3219x3219",
+          "type": "image/png"
+        }
+      ],
+    "screenshots": [
+        {
+          "src": "images/Screenshot.png",
+          "sizes": "3642x1751",
+          "type": "image/png",
+          "purpose": "any",
+          "platform": "web",
+          "form_factor": "wide",
+          "orientation": "landscape"
+        }],
+      "theme_color": "white",
+      "background_color": "black",
+    "display": "standalone"
+  }

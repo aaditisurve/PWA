@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSQNB0SBN9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-CSQNB0SBN9');
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/icon.png" alt="Icon" class="icon">
+            <div class="categories">Categories</div>
+            <div class="search">
+                <input type="text" placeholder="Search for anything">
+            </div>
+            <div class="buttons">
+                <button class="no">Udemy Business</button>
+                <button class="no">Teach on Udemy</button>
+                <button>Log In</button>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="home_image">
+        <img src="images/home.jpg" alt="Home Page">
+    </div>
+    <div id="quote">
+        <h2>All the skills you need in one place</h2>
+        <h3>From critical workplace skills to technical topics, our catalog supports well-rounded professional
+            development.</h3>
+    </div>
+    <div id="home" class="hero">
+        <h2>Learners are viewing</h2>
+    </div>
+
+    <div class="section courses">
+        <div class="container">
+            <div class="course">
+                <a href="course1.html">
+                    <img src="images/course_1.jpg" alt="Course 1">
+                </a>
+                <p>Nodejs</p>
+            </div>
+            <div class="course">
+                <a href="course2.html">
+                    <img src="images/course_2.png" alt="Course 2">
+                </a>
+                <p>Flutter</p>
+            </div>
+            <div class="course">
+                <a href="course3.html">
+                    <img src="images/course_3.png" alt="Course 3">
+                </a>
+                <p>Java</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

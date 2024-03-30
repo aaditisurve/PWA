@@ -1,0 +1,204 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px; 
+    height: auto;
+    z-index: 1000; 
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.section {
+    padding: 40px 0;
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Add this to your existing CSS */
+
+/* Reset CSS */
+body, h1, h2, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.no{
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    width: 80px; 
+    height: auto;
+}
+
+.categories {
+    color: white;
+    margin-right: 20px;
+}
+
+.search {
+    margin-right: 20px;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 600px;
+    height: 40px;
+}
+
+.buttons {
+    display: flex; /* Use flexbox */
+}
+
+.buttons button {
+    margin-right: 25px;
+    padding: 8px 15px;
+    /* background-color: white; */
+    /* color: black; */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.hero {
+    background-color: black; 
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+}
+
+.section {
+    padding: 40px 0;
+    background-color: black; 
+}
+
+.courses {
+    text-align: center;
+}
+
+.course {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    text-align: center;
+}
+
+.course img {
+    width: 300px; 
+    height: auto;
+}
+
+.course p {
+    margin-top: 10px;
+    color: white;
+}
+
+#home_image{
+    text-align: center;
+}
+
+#quote{
+    color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+
